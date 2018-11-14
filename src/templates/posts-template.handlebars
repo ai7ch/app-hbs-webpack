@@ -1,0 +1,13 @@
+{{#each posts}}
+<div class="col-md-3">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://via.placeholder.com/286x180.png?text=Hello+World" alt="Card image cap" style="height: 180px;width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title"><i class="far fa-clock"></i> {{uppercase title}} </h5>
+      <p class="card-text">{{body}}</p>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-{{id}}"><i class="fab fa-readme"></i> More...!</a>
+    </div>
+  </div>
+  {{> modal}}
+</div>
+{{/each}}
